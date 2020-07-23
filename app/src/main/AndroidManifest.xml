@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hendro.smart_in.duan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/a"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ListHoaDonChiTietByIDActivity"></activity>
+        <activity android:name=".Activity.HoaDonDetailActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.UserDetailActivity" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
+        <activity android:name=".Activity.TopBookActivity" />
+        <activity android:name=".Activity.ThongKeActivity" />
+        <activity android:name=".Activity.ListHoaDonActivity" />
+        <activity android:name=".Activity.HoaDonActivity" />
+        <activity android:name=".Activity.ListBookActivity" />
+        <activity android:name=".Activity.BookActivity" />
+        <activity android:name=".Activity.ListTheLoaiActivity" />
+        <activity android:name=".Activity.TheLoaiActivity" />
+        <activity android:name=".Activity.ListUserActivity" />
+        <activity android:name=".Activity.UserActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.TheLoaiDetailActivity" />
+        <activity android:name=".Activity.BookDetailActivity" />
+        <activity android:name=".Activity.GioiThieuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>

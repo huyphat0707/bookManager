@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TheLoaiDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã Thể Loại"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/edMaTheLoai_CT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã Thể Loại"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên Thể Loại"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/edTenTheLoai_CT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên Thể Loại"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vị Trí"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/edViTri_CT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vị Trí"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/edMoTa_CT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô Tả"
+            android:padding="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUpdateTheLoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="UpdateTheLoai"
+                android:text="Cập nhật"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btnCancelTheLoai_CT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="huyTheloai"
+                android:text="Hủy"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

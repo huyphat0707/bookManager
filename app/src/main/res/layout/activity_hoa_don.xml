@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".Activity.HoaDonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã hoá đơn"
+            android:textSize="18dp"
+            android:id="@+id/edMaHoaDon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edNgayMua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DD-MM-YYYY"
+                android:layout_weight="1"
+                android:textSize="18dp"/>
+            <Button
+                android:id="@+id/picDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:onClick="DatePicker"
+                android:text="CHỌN"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddHoaDon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AddHoaDon"
+            android:text="CHỌN" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

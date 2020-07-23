@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <ImageView
+        android:id="@+id/im_logo_Book"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bookicon"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="4dp"
+        android:layout_toRightOf="@id/im_logo_Book">
+<!--        <TextView-->
+<!--            android:id="@+id/tvNameBook"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:singleLine="true"-->
+<!--            android:text="Name"-->
+<!--            android:textStyle="bold"-->
+<!--            android:gravity="center_vertical"/>-->
+        <TextView
+            android:id="@+id/tvPriceBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tvSoLuongBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số Lượng"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgDeleteBook"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true"/>
+    
+
+
+</RelativeLayout>

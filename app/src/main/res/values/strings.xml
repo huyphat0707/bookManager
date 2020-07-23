@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dự Án Mẫu</string>
+    <string name="facebook_app_id">308895389790975</string>
+    <string name="fb_login_protocol_scheme">fb308895389790975</string>
+
+</resources>
